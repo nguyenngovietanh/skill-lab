@@ -1,0 +1,261 @@
+.header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #ffffff;
+    height: 80px;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 21px;
+    margin-top: 4px;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+.navbar {
+    margin-right: 34px;
+    height: 100%;
+}
+
+.input-group>.form-control:focus, .input-group>.form-select:focus {
+    box-shadow: none;
+}
+
+.input-group {
+    border: 1px solid #979797; 
+    width: 300px !important;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 100%;
+    border-bottom: 3px solid #ffffff;
+    transition: .2s;
+}
+
+.navbar ul li:hover {
+    border-bottom: 3px solid #007EDA;
+}
+
+.navbar ul li:last-child:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.navbar ul li:hover a {
+    color: #007EDA;
+    font-weight: bold;
+}
+
+ul {
+    height: 100%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    transition: .2s;
+}
+
+ul li button {
+    width: 115px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #007EDA;
+    background: #007EDA;
+    color: #ffffff;
+    transition: .2s;
+}
+
+ul li button:hover {
+    transform: scale(1.1);
+    background: #f0f0f0;
+    border: 1px solid #007EDA;
+    color: #007EDA;
+}
+
+#li-2, #li-3, #li-4, #li-5 {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#li-3:hover .dropdown-menu {
+    display: block;
+    margin-top: 203px;
+    height: 120px;
+    width: 80px;
+    border: none;
+    border-radius: 0px;
+    min-width: 77px;
+    padding: 0rem 0;
+}
+
+#li-3 ul li {
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 3px solid #ffffff;
+}
+
+#li-3 ul li a {
+    color: #000000;
+    font-weight: normal;
+}
+
+#li-3 ul li:hover {
+    border-bottom: 3px solid #007EDA;
+}
+
+#li-3 ul li:hover a {
+    color: #007EDA;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1520px) {
+    .input-group {
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 43px;
+    }
+
+    li a, li button {
+        font-size: 10px;
+    }
+
+    .logo {
+        margin-left: 11px;
+        margin-top: 2px;
+    }
+
+    .logo img {
+        height: 37px;
+        width: auto;
+    }
+
+    .input-group {
+        width: 160px !important;
+        margin-right: 30px !important;
+    }
+
+    input, .input-group button {
+        height: 21px !important;
+        width: 35px !important;
+        font-size: 11px !important;
+    }
+
+    .form-control {
+        padding-left: 0.4rem !important;
+    }
+
+    #li-1, #li-2 {
+        width: 45px !important;
+    }
+
+    #li-2 {
+        margin-left: 11px !important;
+    }
+
+    #li-3 {
+        width: 54px !important;
+        margin-left: 9px !important;
+    }
+
+    #li-4 {
+        width: 57px !important;
+        margin-left: 11px !important;
+    }
+
+    #li-5 {
+        width: 55px !important;
+        margin-left: 9px !important;
+    }
+
+    ul li:last-child {
+        margin-left: 10px !important;
+    }
+
+    ul li button {
+        width: 68px;
+        height: 25px;
+    }
+
+    .input-group button {
+        width: 26px !important;
+        height: auto;
+    }
+
+    .input-group button .fa-search::before {
+        font-size: 13px;
+    }
+
+    .navbar {
+        margin-right: 18px;
+    }
+
+    #li-3:hover .dropdown-menu {
+        margin-top: 124px;
+        width: 54px;
+        min-width: 54px !important;
+        height: 78px;
+    }
+
+    #li-3 ul li {
+        height: 26px;
+    }
+
+    #li-3 ul li:last-child {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .header {
+        height: 70px;
+        width: 540px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+    .logo img {
+        height: 50px;
+    }
+    #toggle {
+        cursor: pointer;
+        color: #1e0f3d;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 2rem;
+    }
+
+    .input-group {
+        opacity: 0;
+    }
+
+    .navbar {
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        top: -800px;
+    }
+}
+    

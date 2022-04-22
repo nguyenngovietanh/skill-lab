@@ -1,0 +1,273 @@
+*,
+body {
+	font-family: "Exo 2", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	position: relative;
+	padding-top: 80px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+.header-text {
+	position: absolute;
+	top: 40%;
+	left: 100px;
+	color: white;
+}
+
+.service-option p {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.service-option img {
+	height: 70px;
+	width: auto;
+}
+
+.expert-info {
+    width: 307px;
+    height: 415px;
+    background: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.5);
+}
+
+.expert-info img {
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.expert-introduce {
+    height: 80px;
+    background: #007EDA;
+}
+
+.expert-introduce::before {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    background: #007EDA;
+    transform: rotate(45deg);
+    margin-bottom: 55px;
+    margin-right: 240px;
+}
+
+.expert-title {
+    height: 40px;
+    background: #00ACF2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.col-1 img {
+	width: 30px;
+	height: auto;
+}
+
+.card.blog-card {
+	border-radius: 1em;
+}
+
+.border-top {
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+.blog-text {
+	position: relative;
+}
+
+.blog-text::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+	border-bottom: 1.5rem solid #007ed4;
+	top: -1rem;
+	left: 1rem;
+}
+
+.border-bottom-parent {
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.border-bottom-child {
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.blog-card:hover {
+	cursor: pointer;
+	box-shadow: 15px 15px lightblue;
+	transition: 0.5s;
+	transform: translateX(-10px) translateY(-10px);
+}
+
+.font-regular {
+	font-weight: --font-weight-regular;
+}
+
+.font-bold {
+	font-weight: --font-weight-bold;
+}
+
+.font-medium {
+	font-weight: --font-weight-medium;
+}
+.mlispec-map img {
+	width: 450px;
+	height: auto;
+}
+
+.application-content {
+	margin-top: 80px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+	* {
+        font-size: 11px;
+    }
+	header {
+		padding-top: 43px;
+	}
+	h2 {
+		font-size: 16px !important;
+	}
+	.header-text {
+		top: 40%;
+		left: 100px;
+	}
+	.header-text .fw-bold {
+		font-size: 17px !important;
+	}
+	.header-text span {
+		font-size: 8px !important;
+	}
+	.head-content div {
+		width: 533px !important;
+		height: 62px !important;
+	}
+	.service .fw-bold {
+		font-size: 11px !important;
+	}
+	.col-4 span {
+		font-size: 9px;
+		padding: 0;
+	}
+	.service .col-4 {
+		height: 163px !important;
+	}
+	.bachelor strong {
+		font-size: 21px !important;
+	}
+	.bachelor span {
+		font-size: 9px;
+	}
+	.learn-online-title {
+		width: 590px !important;
+	}
+
+	/* expert */
+	.expert-list {
+		width: 587px !important;
+	}
+	.expert-info {
+		width: 163px;
+		height: 219px;
+		background: #ffffff;
+		margin-left: 11px;
+		margin-right: 11px;
+		margin-bottom: 32px;
+		border-radius: 5px;
+		box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.5);
+	}
+	
+	.expert-info img {
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+	
+	.expert-introduce {
+		height: 43px;
+		background: #007EDA;
+	}
+
+	.expert-introduce p, .expert-title p {
+		width: 158px !important;
+		font-size: 10px;
+	}
+
+	.expert-title p {
+		font-size: 9px !important;
+	}
+	
+	.expert-introduce::before {
+		width: 20px;
+		height: 20px;
+		margin-bottom: 40px;
+		margin-right: 118px;
+	}
+	
+	.expert-title {
+		height: 21px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	/* application */
+	.application {
+		margin-top: 90px !important; 
+		margin-bottom: 53px !important;
+	}
+	.application-content {
+		margin-top: 44px;
+		margin-left: 64px;
+		margin-right: 64px;
+	}
+	.mlispec-title strong {
+		font-size: 23px !important;
+	}
+	.mlispec-content {
+		width: 380px !important;
+	}
+	.mlispec-content p, .mlispec-content span {
+		font-size: 10px !important;
+	}
+	.mlispec-map img {
+		width: 240px;
+	}
+	.conigtive span {
+		font-size: 9.5px;
+	}
+	.conigtive-title {
+		font-size: 21px;
+	}
+	.col-1 img {
+		width: 16px;
+	}
+	.service-option img {
+		height: 37px;
+	}
+	.service-option span {
+		font-size: 11px !important;
+	}
+	.service-option p {
+		font-size: 7.5px;
+	}
+}

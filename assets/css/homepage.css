@@ -1,0 +1,745 @@
+/* Website < 1520px */
+*, body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 40px;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+h2, h2 > b {
+    font-size: 32px;
+}
+.banner{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.banner-text p {
+    font-size: 42px;
+}
+.banner img{
+     height: 100%;
+     width: 100%;    
+}
+.banner-text button {
+    width: 200px;
+    height: 60px;
+    background: #2E8ACB;
+    border-radius: 10px;
+}
+.icon-nav {
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom:60px;
+    padding-top:50px; 
+    font-size:20px; 
+    color:#165FA5;
+}
+.number {
+    font-size: 32px;
+    color: #165FA5;
+    border: 2px solid #165FA5;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 60px;
+    height: 60px;
+    font-weight: bold; 
+}
+.expert-list button:first-child {
+    margin-right: 13px;
+}
+.expert-list button:last-child {
+    margin-left: 13px;
+}
+.expert-info {
+    width: 276px;
+    height: 415px;
+    background: #ffffff;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.expert-info img {
+    height: 295px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.expert-introduce {
+    height: 80px;
+    background: #007EDA;
+}
+.expert-introduce::before {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    background: #007EDA;
+    transform: rotate(45deg);
+    margin-bottom: 55px;
+    margin-right: 205px;
+}
+.expert-title {
+    height: 40px;
+    background: #00ACF2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.option-1, .option-2, .option-3 {
+    margin-top: -7px !important;
+}
+.option-1 b, .option-2 b, .option-3 b {
+    font-size: 20px; 
+    color:#165FA5;
+}
+.option-1 p, .option-2 p, .option-3 p {
+    width: 360px;
+}
+.cmt{
+    background-color: #0D7ECD;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+.cmt::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid #0D7ECD;
+    top: 18rem;
+    left: 0.8rem;  
+}
+.cmt2{
+    background-color: #00A9E7;
+    color: #FFFFFF;
+    text-align: center;
+    height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cmt3 {
+    background-color: #4CABE8;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: relative;   
+    color: #FFFFFF;
+}
+.cmt3::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid #4CABE8;
+    top: -21px;
+    left: 0.8rem;   
+}
+.cmt3 p {
+    display: flex;
+    align-items: center;
+}
+.cmt3 p span {
+    position: absolute;
+    background: #ffffff;
+    height: 1px;
+    width: 35px;
+    margin-left: 65px;
+}
+.banner-text{
+    width: 503px;
+    position:absolute;
+    top: 14%;
+    margin-left: 120px;
+    color:white;
+    text-align: left;
+}
+.skill-box {
+    width: 380px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.skill-box:first-child {
+    margin-left: 0;
+}
+.skill-box:last-child {
+    margin-right: 0;
+}
+.sign-up button {
+    border-radius: 10px; 
+    background: #0D7ECD;
+    width: 280px;
+    height: 60px;
+}
+.cooperative-schools {
+    background-color: #E6F1F1; 
+    padding-top:67px; 
+    padding-left:200px; 
+    padding-right:200px; 
+    padding-bottom:100px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 11px;
+    }
+    /* banner */
+    .banner {
+        padding-top: 43px;
+    }
+    .banner-text {
+        top: 10%;
+        margin-left: 60px;
+    }
+    .banner-text p, .banner-text strong {
+        font-size: 23px !important;
+    }
+    .banner-text p {
+        line-height: 28px !important;
+    }
+    .banner-content span {
+        width: 340px;
+    }
+    .banner-text button {
+        width: 107px;
+        height: 32px;
+        background: #2E8ACB;
+        font-size: 11px;
+        border-radius: 5px;
+    }
+    .icon-nav {
+        padding-bottom:32px;
+        padding-top:27px; 
+    }
+    h2, h2 > b {
+        font-size: 17px;
+    }
+    /* expert */
+    .expert-list {
+        width: 686px !important;
+    }
+    .expert-list button:first-child {
+        margin-right: 4px;
+    }
+    .expert-list button:last-child {
+        margin-left: 4px;
+    }
+    .expert-info {
+        width: 148px;
+        height: 219px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 21px;
+    }
+    .expert-info img {
+        height: 154px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .expert-introduce {
+        height: 43px;
+        background: #007EDA;
+    }
+    .expert-introduce::before {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        background: #007EDA;
+        transform: rotate(45deg);
+        margin-bottom: 29px;
+        margin-right: 109px;
+    }
+    .expert-introduce p {
+        width: 140px !important;
+        font-size: 9px;
+    }
+    .expert-title {
+        height: 21px;
+        background: #00ACF2;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .expert-title p {
+        font-size: 10px !important;
+    }
+    /* bachelor */
+    .online-bachelor {
+        width: 80% !important;
+        margin-top: 75px !important;
+    }
+    .online-bachelor img {
+        padding-right: 25px !important;
+    }
+    .online-bachelor .col-md-6 {
+        padding-top: 0 !important;
+    }
+    .number {
+        font-size: 17px;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+    }
+    .online-bachelor-title {
+        font-size: 15px !important;
+        width: 237px !important;
+
+    }
+    .option-1, .option-2, .option-3 {
+        margin-top: -4px !important;
+    }
+    .option-1 p, .option-2 p, .option-3 p {
+        width: 192px;
+        font-size: 10px !important;
+        margin: 0 !important;
+        width: 100%;
+        margin-bottom: 13px !important;
+    }
+    .option-1 b, .option-2 b, .option-3 b {
+        font-size: 11px; 
+    }
+    /* application */
+    .application {
+        margin-top: 70px !important;
+    }
+    .application .col-md-7 {
+        padding-left: 30px;
+    }
+    .application .col-md-5 {
+        padding-right: 30px;
+    }
+    .application img {
+        width: 90% !important;
+    }
+    .application .mb-5 .row {
+        padding-left: 0 !important; 
+        padding-right: 0 !important;
+    }
+    .application strong {
+        font-size: 21px !important;
+    }
+    .application p {
+        padding-right: 0;
+    }
+    /* conigtive */
+    .conigtive {
+        padding-left: 20px !important;
+    }
+    .conigtive .col-md-6 img {
+        width: 70%;
+    }
+    .conigtive .col-md-6:last-child {
+        width: 317px !important;
+    }
+    .conigtive strong {
+        font-size: 21px !important;
+    }
+    .conigtive .col-1 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /* gallery */
+    .gallery {
+        margin-top: 3rem;
+    }
+    .cmt3 p span {
+        margin-left: 40px;
+    }
+    .skill-box {
+        width: 202px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .skill-box:first-child {
+        margin-left: 0;
+    }
+    .skill-box:last-child {
+        margin-right: 0;
+    }
+    .skill-box img {
+        height: 135px !important;
+    }
+    .skill-box-title {
+        font-size: 11px !important;
+    }
+    .sign-up button {
+        width: 150px;
+        height: 32px;
+    }
+    .cooperative-schools {
+        padding-top:36px; 
+        padding-left:107px; 
+        padding-right:107px; 
+        padding-bottom:53px;
+    }
+}
+
+/* Surface Duo */
+@media only screen and (max-width: 540px) {
+    /* banner */
+
+    .banner::after {
+        content: '';
+        position: absolute;
+        width: 65%;
+        height: 760px;
+        top: 70px;
+        left: 0;
+        background-image: linear-gradient(to right,
+                rgb(0, 113, 192), rgb(0, 169, 231, 0)); 
+    }
+    .banner{
+        overflow: hidden;
+        padding-top: 70px;
+        width: 540px !important;
+    }
+    .banner img {
+        height: 100%;
+        width: 1920px;
+        margin-left: -1106px;
+    }
+    .banner-text {
+        margin-top: 430px;
+        margin-left: 20px;
+        top: 70px;
+        z-index: 10;
+    }
+    .banner-text p {
+        line-height: 40px !important;
+        margin-bottom: 15px;
+    }
+    .banner-text p, .banner-text strong {
+        font-size: 28pt !important;
+    }
+    .banner-text strong {
+        color: #00ABE6;
+    }
+    .banner-content {
+        margin-top: 10px;
+    }
+    .banner-content span {
+        font-size: 14pt !important;
+        width: 450px;
+    }
+    .banner-text button {
+        width: 166px;
+        height: 50px;
+        background: #008AD0;
+        font-size: 16px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    /* main */
+    .container-fluid .main-content {
+        background-color: #ffffff !important;
+        padding-top: 0 !important;
+        margin-top: 77px;
+    }
+
+    /* ONSCHOOL - Tiên phong công nghệ trong xu thế chuyển đổi số Quốc gia */
+    .title-1 {
+        width: 410px;
+        height: 63pt;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .title-1 p, .title-1 strong {
+        font-size: 18pt !important;
+    }
+    .icon-nav {
+        padding-top: 30pt;
+        padding-bottom: 0;
+    }
+    .icon-nav .nav-box {
+        width: 50%;
+    }
+    .icon-nav img {
+        width: 80pt !important;
+        height: 80pt;
+    }
+    .icon-nav p {
+        font-size: 16pt;
+        margin-top: 29pt !important;
+        margin-bottom: 58pt !important;
+    }
+
+    /* Với sự đồng hành của 500+ Chuyên gia Doanh nghiệp */
+    .title-2, .title-2 b {
+        font-size: 24pt !important;
+    }
+    .title-2 {
+        width: 305pt !important;
+        height: 57pt;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-bottom: 35pt !important;
+    }
+    .expert-list {
+        width: 374pt !important;
+    }
+    .expert-list > button {
+        display: none !important;
+    }
+    .expert-info {
+        width: 182pt;
+        height: 272pt;
+        margin: 0 !important;
+    }
+    .expert-info-1, .expert-info-3 {
+        padding-right: 5pt;
+    }
+    .expert-info-2, .expert-info-4 {
+        padding-left: 5pt;
+    }
+    .expert-info-1, .expert-info-2 {
+        padding-bottom: 10pt;
+    }
+    .expert-info-3, .expert-info-4 {
+        padding-top: 10pt;
+    }
+    .expert-info img {
+        height: 193pt;
+        border-top-right-radius: 10pt;
+        border-top-left-radius: 10pt;
+    }
+    .expert-introduce {
+        height: 52pt;
+    }
+    .expert-introduce::before {
+        margin-bottom: 62px;
+        margin-right: 177px;
+    }
+    .expert-introduce p, .expert-title p {
+        font-size: 10.5pt !important;
+        width: 178pt !important;
+    }
+    .expert-title {
+        height: 26pt;
+        border-bottom-left-radius: 10pt;
+        border-bottom-right-radius: 10pt;
+    }
+    .online-bachelor {
+        margin-top: 91pt !important;
+        width: 90% !important;
+    }
+    .online-bachelor img {
+        margin-bottom: 58pt !important;
+        padding-right: 0 !important;
+    }
+    .online-bachelor-title {
+        width: 375pt !important;
+        max-width: 375pt;
+        margin-bottom: 30pt;
+    }
+    .online-bachelor-title span, .online-bachelor-title strong {
+        font-size: 24pt !important;
+    }
+    .col-2 .number {
+        font-size: 29pt;
+        width: 54pt;
+        height: 54pt;
+        border-radius: 10pt;
+    }
+    .option-1 b, .option-2 b, .option-3 b {
+        font-size: 16pt;
+    }
+
+    .option-1 p, .option-2 p, .option-3 p {
+        font-size: 14pt !important;
+        line-height: 22px !important;
+        margin-bottom: 20pt !important;
+    }
+    .option-1, .option-2, .option-3 {
+        margin-left: 5pt;
+    }
+    /* PHƯƠNG PHÁP SƯ PHẠM ỨNG DỤNG THỰC TIỄN */
+    .application {
+        margin-top: 73pt !important;
+        margin-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .application h2 {
+        font-size: 24pt;
+        width: 290pt;
+    }
+    .application strong {
+        font-size: 40pt !important;
+    }
+    .application .mb-3 {
+        font-size: 20pt !important;
+        width: 370pt;
+        line-height: 20pt;
+        padding-bottom: 15pt;
+    }
+    .mlispec-content {
+        padding: 0 !important;
+        flex-direction: column;
+    }
+    .application p {
+        margin-bottom: 10pt !important;
+    }
+    .application p, .application b, .application strong, .application span {
+        font-size: 14pt;
+    }
+    .application p:last-child {
+        margin-bottom: 40pt !important;
+    }
+    .application .col-md-5 {
+        padding: 0 !important;
+        width: 80%;
+    }
+    .application .col-md-7 {
+        padding-left: 15px;
+        width: 510px !important;
+    }
+    /* 5 CONIGTIVE LEVELS */
+    .conigtive {
+        width: 100%;
+        padding: 0 !important;
+        padding-bottom: 60pt !important;
+    }
+    .conigtive .col-md-6:last-child {
+        width: 360pt !important;
+        padding-left: 20pt !important;
+    }
+    .conigtive strong {
+        font-size: 32pt !important;
+    }
+    .conigtive-highlight {
+        font-size: 16pt !important;
+    }
+    .conigtive p {
+        font-size: 14pt;
+        padding-left: 10pt;
+    }
+    /* Các khóa kỹ năng SmartWork4.0 năm 2022 */
+    .skills {
+        margin-top: 0 !important;
+        padding-top: 73pt;
+    }
+    .skills h2 {
+        font-size: 24pt;
+        width: 290pt;
+        font-weight: bold;
+        margin-bottom: 8pt !important;
+    }
+    .skills p {
+        font-size: 16pt;
+        width: 300pt;
+        margin-bottom: 57pt;
+    }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-box {
+        width: 374pt !important;
+        margin-bottom: 20pt;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .skill-box img {
+        height: 250pt !important;
+        width: 100% !important;
+    }
+    .cmt3 {
+        height: 150pt;
+    }
+    .cmt3::before {
+        top: -11pt;
+        left: 30pt;
+    }
+    .skill-box-title {
+        font-size: 20pt !important;
+        font-weight: bold;
+        margin-bottom: 10pt !important;
+    }
+    .cmt3 .cmt3-content {
+        display: inline-block;
+        font-size: 16pt !important;
+        width: 300pt;
+    }
+    .cmt3 p:last-child, .cmt3 span:last-child {
+        display: none !important;
+    }
+    /* action-gallery */
+    .sign-up button{
+        width: 166px;
+        height: 50px;
+        background: #008AD0;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .action-gallery {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .action-gallery h2 {
+        display: none;
+    }
+    .action-gallery .col-12 {
+        padding: 0;
+    }
+    .gallery-image .col-3 {
+        width: 270px;
+    }
+    /* cooperative-schools */
+    .cooperative-schools {
+        padding-top: 60pt;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .cooperative-schools h2 {
+        font-size: 24pt !important;
+        width: 300pt;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .logo-school {
+        padding-top: 20pt;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 60pt !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .logo-school img {
+        width: 100pt !important;
+        height: auto;
+    }
+    .logo-1, .logo-2, .logo-3 {
+        width: 33.33% !important;
+    }
+    .logo-4, .logo-5 {
+        width: 50% !important;
+        margin-top: 26pt !important;
+    }
+    .logo-4 {
+        display: flex;
+        justify-content: end;
+        padding-right: 13pt !important;
+    }
+    .logo-5 {
+        display: flex;
+        justify-content: start;
+        padding-left: 13pt !important;
+    }
+}
+
+

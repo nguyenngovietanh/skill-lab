@@ -1,0 +1,520 @@
+* {
+    font-size: 16px;
+    font-family: 'Exo 2', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* header  */
+.wrapper {
+    width: 100%;
+}
+
+header {
+    padding-top: 80px;
+}
+
+header img {
+    width: 100%; 
+    height: 100%;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+.header-content {
+    top: 180px; 
+    left: 100px;
+}
+/* coaching  */
+h2 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #333333;
+    text-align: center;
+}
+
+.reason-h2, .action-h2, .condition-h2 {
+    margin-bottom: 54px;
+}
+
+.coaching-line {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.coaching-line svg {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.coaching-line p {
+    margin-left: 10px;
+}
+
+/* introduce  */
+
+.introduce {
+    width: 1000px;
+}
+
+.content-introduce {
+    margin-top: 95px;
+    color: #4d4d4d;
+    height: 195px;
+}
+
+.job-options {
+    margin-top: 20px;
+    margin-bottom: 152px;
+}
+
+.option {
+    height: 285px;
+    width: 285px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.5);
+}
+
+.job-icon {
+    height: 80px;
+    width: 80px;
+    line-height: 20px;
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 34px;
+}
+
+.job-title {
+    color: #333333;
+    font-size: 20px;
+}
+
+.job-content {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* reason  */
+
+.reason-container {
+    margin-bottom: 160px;
+}
+
+.reason-to-join {
+    width: 1000px;
+}
+
+.reason-content {
+    width: 480px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.reason-content-1 {
+    margin-right: 20px;
+    margin-bottom: 18px;
+}
+
+.reason-content-2 {
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+
+.reason-content-3 {
+    margin-right: 20px;
+    margin-top: 18px;
+}
+
+.reason-content-4 {
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+.reason-number {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #cbcbcb;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.reason-number .number {
+    width: 80px;
+}
+
+.reason-number .number p {
+    font-size: 42px;
+    color: #b2b2b2;
+}
+
+.reason-document {
+    height: 80px;
+    margin-right: 20px;
+}
+
+.reason-title {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.reason-specific {
+    font-size: 14px;
+}
+
+/* action  */
+
+.step-number img {
+    height: 210px;
+    margin-bottom: 36px;
+}
+
+.action {
+    width: 1200px;
+}
+
+.action-step-2 {
+    margin-left: 26px;
+}
+
+.action-step-3 {
+    margin-left: 19px;
+}
+
+.action-step-4 {
+    margin-left: 15px;
+}
+
+.step-title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bolder;
+    margin-bottom: 22px;
+}
+
+.step-content {
+    height: 206px;
+    margin-bottom: 64px;
+}
+
+.step-content .d-flex p {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.step-content-1 .d-flex p {
+    width: 265px;
+}
+
+.step-content-2 .d-flex p {
+    width: 266px;
+}
+
+.step-content-3 .d-flex p {
+    width: 276px;
+}
+
+.step-content-4 .d-flex p {
+    width: 265px;
+}
+
+/* condition  */
+
+.condition {
+    margin-bottom: 120px;
+}
+
+.condition-h2 {
+    font-size: 36px; 
+}
+
+.condition-content {
+    width: 800px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.5);
+}
+
+.condition-content:last-child {
+    margin-bottom: 0px;
+}
+
+.condition-icon {
+    margin: 20px 40px 20px 20px;
+}
+
+.condition-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.condition-document {
+    width: 616px;
+    height: 84px;
+    margin-top: 29px;
+}
+
+.condition-specific {
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 11px;
+    }
+
+    /* header  */
+    header {
+        padding-top: 43px !important;
+    }
+
+    header img {
+        height: 213px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    .header-content {
+        top: 90px; 
+        left: 70px;
+    }
+
+    /* coaching  */
+
+    .coaching-line {
+        margin-bottom: 2px;
+    }
+
+    .coaching-line svg {
+        font-size: 14px;
+    }
+
+    .coaching-line p {
+        margin-left: 5px;
+        margin-bottom: 3px;
+    }
+
+    /* introduce  */
+
+    .introduce {
+        width: 533px;
+    }
+
+    .content-introduce {
+        margin-top: 51px;
+        height: 110px;
+    }
+
+    .job-options {
+        margin-top: 40px;
+        margin-bottom: 85px;
+    }
+    
+    .option {
+        height: 164px;
+        width: 164px;
+        border-radius: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .job-icon {
+        height: 43px;
+        width: 43px;
+        line-height: 11px;
+        font-size: 8px;
+        line-height: 8px;
+        margin-bottom: 18px;
+    }
+
+    .job-title {
+        font-size: 11px;
+    }
+    
+    .job-content {
+        font-size: 10px;
+        margin-top: 7px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* reason  */
+    
+    .reason-h2, .action-h2, .condition-h2 {
+        margin-bottom: 25px;
+    }
+
+    .reason-container {
+        margin-bottom: 85px;
+    }
+    
+    .reason-to-join {
+        width: 533px;
+    }
+
+    .reason-content {
+        width: 254px;
+        height: 64px;
+        border-radius: 7px;
+    }
+    
+    .reason-content-1 {
+        margin-right: 11px;
+        margin-bottom: 9px;
+    }
+    
+    .reason-content-2 {
+        margin-left: 11px;
+        margin-bottom: 9px;
+    }
+    
+    .reason-content-3 {
+        margin-right: 11px;
+        margin-top: 9px;
+    }
+    
+    .reason-content-4 {
+        margin-left: 11px;
+        margin-top: 9px;
+    }
+
+    .reason-number {
+        width: 43px;
+        height: 43px;
+        border-radius: 11px;
+        margin: 11px;
+    }
+    
+    .reason-number .number {
+        width: 43px;
+    }
+    
+    .reason-number .number p {
+        font-size: 23px;
+    }
+    
+    .reason-document {
+        height: 43px;
+        margin-right: 11px;
+    }
+
+    .reason-title {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    
+    .reason-specific {
+        font-size: 7px;
+    }
+
+    /* action  */
+
+    .action {
+        width: 640px;
+    }
+    
+    .step-number img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 18px;
+    }
+    
+    .action-step-2 {
+        margin-left: 10px;
+    }
+    
+    .action-step-3 {
+        margin-left: 8px;
+    }
+    
+    .action-step-4 {
+        margin-left: 8px;
+    }
+
+    .step-title {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .step-content {
+        height: 110px;
+        width: 150px;
+        margin-bottom: 33px;
+    }
+
+    .step-content i {
+        font-size: 8px;
+    }
+    
+    .step-content .d-flex p {
+        font-size: 9px;
+        margin-left: 4px;
+        margin-bottom: 1px;
+    }
+    
+    .step-content-1 .d-flex p {
+        width: 154px;
+    }
+    
+    .step-content-2 .d-flex p {
+        width: 154px;
+    }
+    
+    .step-content-3 .d-flex p {
+        width: 154px;
+    }
+    
+    .step-content-4 .d-flex p {
+        width: 154px;
+    }
+
+    /* condition  */
+
+    .condition {
+        margin-bottom: 64px;
+    }
+
+    .condition-h2 {
+        font-size: 21px; 
+    }
+    
+    .condition-content {
+        width: 427px;
+        height: 64px;
+        margin-bottom: 11px;
+        border-radius: 5px;
+    }
+    
+    .condition-icon {
+        margin: 11px 21px 11px 11px;
+    }
+    
+    .condition-icon img {
+        width: 43px;
+        height: 43px;
+    }
+    
+    .condition-document {
+        width: 384px;
+        height: 45px;
+        margin-top: 15px;
+    }
+    
+    .condition-specific {
+        font-size: 11px;
+        padding-right: 25px;
+    }
+}
