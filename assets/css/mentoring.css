@@ -1,5 +1,4 @@
 * {
-    font-size: 16px;
     font-family: 'Exo 2', sans-serif;
     padding: 0;
     margin: 0;
@@ -17,9 +16,12 @@ header {
 }
 
 header img {
-    width: 100%; 
-    height: auto;
-    margin-bottom: 67px;
+    width: 100%;
+    height: 400px;
+}
+
+.header-content {
+    padding-left: 100pt;
 }
 
 .coaching-line {
@@ -52,6 +54,11 @@ span {
     margin-bottom: 37px;
 }
 
+.mentoring-container {
+    margin-top: 67px;
+    justify-content: space-around;
+}
+
 .mentoring-condition-content {
     width: 376px;
 }
@@ -73,7 +80,9 @@ span {
     font-size: 14px;
 }
 
-.case-study-2, .case-study-3, .case-study-4 {
+.case-study-2,
+.case-study-3,
+.case-study-4 {
     margin-left: 20px;
 }
 
@@ -135,8 +144,15 @@ span {
     z-index: 1;
 }
 
-.m4-2, .m4-3, .m4-4 {
+.m4-2,
+.m4-3,
+.m4-4 {
     margin-left: 24px;
+}
+
+.expert-list {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .expert-label img {
@@ -152,7 +168,7 @@ span {
     margin-right: 20px;
     margin-bottom: 40px;
     border-radius: 10px;
-    box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 5%);
 }
 
 .expert-info img {
@@ -184,7 +200,100 @@ span {
     border-bottom-right-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 1920px) and (max-width: 2560px) {
+    header img {
+        width: 100%;
+        height: auto !important
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header img {
+        width: 100%;
+        height: auto !important
+    }
+    .mentoring-condition {
+        width: 95% !important;
+    }
+    .process-text {
+        width: 90% !important;
+    }
+    .case-study-process {
+        width: 95%;
+    }
+    .case-study {
+        width: 25% !important;
+    }
+    .case-study-content {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-top: -30px;
+    }   
+    .case-study-step img {
+        width: 150px;
+        height: auto;
+    }
+    .content-box ul li {
+        font-size: 12px;
+    }
+    .content-box ul {
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 40px;
+        padding-left: 1.2rem !important;
+    }
+    .m4-process {
+        width: 90%;
+        margin-bottom: 90px;
+    }
+    .m4 {
+        width: 25%;
+    }
+    .m4-content {
+        width: 100%;
+        height: 240px;
+        background: #ffffff;
+        border-radius: 20px;
+        border: 2px solid #0071BA;
+        margin-top: -17px;
+    }
+    .m4-step {
+        width: 135px;
+        height: auto;
+        font-size: 22px;
+    }
+    .m4-content-box {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+    .m4-content-box p {
+        font-size: 13px;
+    }
+    .expert-text {
+        width: 90%;
+    }
+    .expert-list {
+        width: 90% !important;
+    }
+    .expert-info {
+        width: 30%;
+        height: 405px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+    .expert-info img {
+        height: 285px;
+    }
+    .expert-introduce::before {
+        margin-bottom: 50px;
+        margin-right: 195px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
     * {
         font-size: 11px;
     }
@@ -193,51 +302,43 @@ span {
     header {
         padding-top: 43px !important;
     }
-
     .header-content {
         top: 117px !important;
         left: 53px !important;
+        padding-left: 0;
     }
-
     .header-content h1 {
         font-size: 16px !important;
     }
-
     .coaching-line {
         display: flex;
         align-items: center;
     }
-
     .coaching-line p {
         margin-bottom: 0;
     }
-
     header img {
-        margin-bottom: 36px;
+        height: 213px !important;
     }
-
-    h2, strong {
+    h2,
+    strong {
         font-size: 17px !important;
     }
 
     /* what is mentoring */
-
     .mentoring-container {
         height: 294px !important;
         margin-bottom: 62px !important;
     }
-
     .mentoring-container img {
         margin-left: 18px !important;
     }
-
     .mentoring-content {
-        width: 352px !important; 
+        width: 352px !important;
         margin-left: 35px !important;
     }
-
     .mentoring-title {
-        font-size: 23px !important; 
+        font-size: 23px !important;
         margin-bottom: 15px;
     }
 
@@ -246,105 +347,91 @@ span {
     .mentoring-condition {
         width: 650px !important;
     }
-
     .condition-icon img {
         height: 43px;
         width: 43px;
         margin-bottom: 20px;
     }
-
     .condition-title {
         font-size: 13px;
         margin-bottom: 12px;
     }
-
     .condition-content {
         height: 123px;
     }
-
     .condition-content p {
         font-size: 8px;
     }
 
     /* process */
     .case-study-title {
-        width: 332px !important; 
-        margin-top: 50px !important; 
+        width: 332px !important;
+        margin-top: 50px !important;
         margin-bottom: 15px !important;
     }
-
     .process-text {
-        width: 533px !important; 
+        width: 533px !important;
         height: 56px !important;
     }
-
     .case-study-process {
         margin-bottom: 60px !important;
     }
-
-    .case-study-2, .case-study-3, .case-study-4 {
+    .case-study-2,
+    .case-study-3,
+    .case-study-4 {
         margin-left: 11px;
     }
-
     .case-study-step img {
         width: 107px;
         height: 32px;
     }
-
     .case-study-content {
         width: 154px;
         height: 210px;
         border-radius: 6px;
         margin-top: -21px;
     }
-
     .content-box ul {
         margin-left: 0;
         margin-right: 7px;
         margin-top: 30px;
+        padding-left: 2rem !important;
     }
-
     .content-box ul li {
         font-size: 8px;
         margin-bottom: 5px;
         margin-left: 0 !important;
     }
-
     .content-box ul li:last-child {
         margin-left: 0 !important;
     }
+
     /* 4M process */
     .m4-title {
         margin-top: 0 !important;
     }
-
     .m4-process {
         margin-bottom: 70px !important;
     }
-
     .process p {
         width: 600px !important;
     }
-
     .m4-step {
         width: 107px;
         height: 27px;
         font-size: 17px;
     }
-
     .m4-content {
         width: 154px;
         height: 128px;
         border-radius: 20px;
         margin-top: -15px;
     }
-
     .m4-content-box {
         margin-left: 15px;
         margin-right: 15px;
         margin-top: 30px;
     }
-
     .m4-content p {
         width: 130px !important;
         font-size: 8px;
@@ -352,33 +439,27 @@ span {
 
     /* expert */
     .expert h2 {
-        margin-top: 50px !important; 
+        margin-top: 50px !important;
         margin-bottom: 5px !important;
     }
-
     .expert-text {
         width: 680px !important;
         height: 40px !important;
     }
-
     .expert-label {
         margin-bottom: 40px !important;
     }
-
     .expert-label img {
         width: 208px;
         height: 28px;
     }
-
     .expert-label p {
         font-size: 11px !important;
     }
-
     .expert-list {
-        width: 586px !important; 
+        width: 586px !important;
         margin-bottom: 38px !important;
     }
-
     .expert-info {
         width: 163px;
         height: 221px;
@@ -387,36 +468,556 @@ span {
         margin-bottom: 23px;
         border-radius: 6px;
     }
-
     .expert-info img {
         height: 157px;
         border-top-right-radius: 6px;
         border-top-left-radius: 6px;
     }
-
     .expert-introduce {
         height: 43px;
     }
-
     .expert-introduce::before {
         width: 20px;
         height: 20px;
         margin-bottom: 35px;
         margin-right: 120px;
     }
-
     .expert-introduce p {
         width: 125px;
         font-size: 9px;
     }
-
     .expert-title {
         height: 23px;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
     }
-
     .expert-title p {
         font-size: 10px !important;
     }
+}
+
+@media only screen and (max-width: 540px) {
+
+    /* header */
+    header {
+        height: 800px;
+        padding-top: 70px;
+        overflow-x: hidden;
+        position: relative;
+        background-image: url(/assets/svg/mentoring-svg/anh-1.jpg);
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 85%;
+        padding-top: 70px !important;
+    }
+    header::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 664px;
+        top: 70px;
+        right: 0;
+        background-image: linear-gradient(to left, rgb(0, 173, 236), rgb(0, 169, 231, 0));
+        z-index: 0;
+    }
+    .intro-bg {
+        width: 888px;
+        height: 888px;
+        background: #107bc3;
+        border: 215px solid #0571b9;
+        border-radius: 50%;
+        margin-top: -487px;
+        margin-left: -185px;
+        overflow: hidden;
+        margin-bottom: 300px;
+        z-index: 1;
+        position: absolute;
+    }
+    header img {
+        display: none;
+    }
+    .header-content {
+        z-index: 10;
+        margin-top: -235pt;
+        margin-left: -75pt;
+    }
+    .img-fluid {
+        max-width: none !important;
+        width: 100%;
+        height: auto;
+    }
+    .header-content h1 {
+        font-size: 32pt;
+        margin-bottom: 20pt !important;
+    }
+    .header-content p {
+        font-size: 12pt;
+    }
+    .header-content svg {
+        width: 21pt;
+        height: 21pt;
+        stroke-width: 0.5px;
+    }
+    .coaching-line {
+        margin-bottom: 10pt;
+    }
+    .header-content h1 {
+        color: #ffffff !important;
+        font-size: 32pt !important;
+    }
+
+    /* what is mentoring? */
+    .mentoring-container {
+        margin-top: 27pt;
+        flex-wrap: wrap;
+        height: auto !important;
+        justify-content: center;
+        margin-bottom: 60pt !important;
+    }
+    .mentoring-container img {
+        width: 100%;
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-bottom: 54pt;
+    }
+    .mentoring-content {
+        width: 100% !important;
+        height: 455pt !important;
+        margin-left: 0 !important;
+    }
+    .mentoring-title {
+        font-size: 28pt !important;
+    }
+    .mentoring-content p {
+        font-size: 14pt;
+        padding-left: 10pt;
+        padding-right: 10pt;
+    }
+
+    /* mentoring condition */
+    .mentoring-condition-h2, .mentoring-condition-h2 strong {
+        font-size: 28pt !important;
+    }
+    .mentoring-condition-h2 {
+        width: 353pt !important;
+    }
+    .mentoring-condition {
+        flex-wrap: wrap;
+        width: 374pt !important;
+        justify-content: center;
+    }
+    .mentoring-condition-content {
+        margin-left: 0 !important;
+        width: 374pt !important;
+        margin-bottom: 50pt;
+    }
+    .condition-icon img {
+        height: 75pt;
+        width: auto;
+    }
+    .condition-title {
+        font-size: 20pt;
+    }
+    .condition-content {
+        height: auto !important;
+    }
+    .condition-content p {
+        font-size: 14pt;
+    }
+
+    /* process */
+    .process h2, .process strong {
+        font-size: 28pt !important;
+        width: 290pt !important;
+        margin-bottom: 21pt !important;
+    }
+    .process .process-text {
+        font-size: 14pt;
+        width: 374pt !important;
+        height: 118pt !important;
+        margin-bottom: 17pt;
+    }
+    .case-study-process {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .case-study-content {
+        width: 192pt;
+        height: 370pt;
+        border-radius: 10pt;
+        margin-top: -35px;
+        margin-bottom: 20pt;
+    }
+    .case-study {
+        width: 45% !important;
+    }
+    .case-study-3 {
+        margin-left: 0 !important;
+    }
+    .case-study-step img {
+        width: 133pt;
+        height: 40pt;
+    }
+    .content-box ul {
+        margin-top: 50pt;
+    }
+    .content-box ul li {
+        font-size: 12pt;
+    }
+    .process p {
+        width: 374pt !important;
+    }
+    .m4-text {
+        margin-bottom: 42pt;
+    }
+    .m4-text, .m4-text span {
+        font-size: 16pt !important;
+    }
+    .m4-process {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+    }
+    .m4-content {
+        width: 95%;
+        height: 185pt;
+        border-radius: 10pt;
+        margin-top: -25px;
+        margin-bottom: 20pt;
+        margin-left: 5pt;
+        margin-right: 5pt;
+    }
+    .m4 {
+        margin-left: 0 !important;
+        width: 50%;
+    }
+    .m4-step {
+        width: 133pt;
+        height: 33pt;
+    }
+    .m4-content-box p {
+        font-size: 12pt !important;
+        width: 165pt !important;
+        height: 123pt;
+    }
+
+    /* expert */
+    .expert h2 {
+        font-size: 28pt !important;
+        margin-bottom: 30pt !important;
+        margin-top: 20pt !important;
+    }
+    .expert-text {
+        width: 375pt !important;
+        height: 124pt !important;
+    }
+    .expert-text, .expert-text span {
+        font-size: 14pt !important;
+    }
+    .expert-label {
+        margin-bottom: 60pt !important;
+    }
+    .expert-label img {
+        width: 312pt;
+        height: 40pt;
+    }
+    .expert-label p {
+        font-size: 16pt !important;
+    }
+    .expert-list {
+        margin-bottom: 90pt !important;
+        width: 100% !important;
+    }
+    .expert-info {
+        width: 182pt;
+        height: 260pt;
+        margin-bottom: 12pt;
+        border-radius: 10pt;
+    }
+    .expert-info img {
+        height: 190pt;
+        border-top-right-radius: 10pt;
+        border-top-left-radius: 10pt;
+    }
+    .expert-introduce {
+        height: 48pt;
+    }
+    .expert-introduce p, .expert-title p {
+        font-size: 10pt;
+        z-index: 1;
+    }
+    .expert-introduce::before {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 42px;
+        margin-right: 170px;
+    }
+    .expert-title {
+        height: 24pt;
+        border-bottom-right-radius: 10pt;
+        border-bottom-left-radius: 10pt;
+    }
+}
+
+/* Iphone 12, Iphone XR, Iphone SE, Samsung Galaxy S8+ */
+@media (min-width: 360px) and (max-width: 414px) {
+    header::after {
+        height: 651px;
+    }
+    .intro-bg {
+        margin-left: -222px;
+        height: 910px;
+    }
+    .header-content h1 {
+        font-size: 24pt !important;
+    }
+    .header-content .ms-3 {
+        margin-left: 0 !important;
+    }
+    .header-content p {
+        font-size: 9.5pt;
+        padding-left: 6pt;
+        margin-bottom: 0;
+    }
+    .header-content svg {
+        width: 18pt;
+        height: 18pt;
+    }
+    .coaching-line p {
+        margin-left: 0;
+    }
+    .mentoring-condition-h2, .mentoring-condition-h2 strong {
+        font-size: 20pt !important;
+    }
+    .mentoring-condition-h2 {
+        width: 92% !important;
+    }
+    .mentoring-content {
+        height: auto !important;
+    }
+    .mentoring-condition {
+        width: 80% !important;
+    }
+    .mentoring-condition-content, .mentoring-condition-content:first-child {
+        width: 100% !important;
+    }
+    .process h2, .process strong {
+        font-size: 22pt !important;
+        width: 73% !important;
+        margin-bottom: 18pt !important;
+    }
+    .process .process-text {
+        font-size: 13pt;
+        width: 90% !important;
+    }
+    .case-study-step img {
+        width: 90pt;
+        height: auto;
+    }
+    .case-study-content {
+        width: 192pt;
+        height: 370pt;
+        border-radius: 10pt;
+        margin-top: -35px;
+        margin-bottom: 20pt;
+    }
+    .case-study-content {
+        width: 100%;
+        height: 280pt;
+        margin-top: -24px;
+    }
+    .content-box ul {
+        margin-top: 25pt;
+    }
+    .content-box ul li {
+        font-size: 8.5pt;
+    }
+    .process p {
+        width: 90% !important;
+        font-size: 10pt !important;
+    }
+    .m4-text {
+        height: 50px;
+    }
+    .m4-text, .m4-text span {
+        font-size: 10pt !important;
+    }
+    .m4-step {
+        width: 100pt;
+        height: auto;
+    }
+    .m4-content-box {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .m4-content {
+        margin-top: -15pt;
+    }
+    .expert h2 {
+        font-size: 22pt !important;
+        margin-top: 40pt !important;
+    }
+    .expert-text {
+        width: 80% !important;
+        height: 70pt !important;
+    }
+    .expert-text, .expert-text span {
+        font-size: 9pt !important;
+    }
+    .expert-label img {
+        width: 80%;
+        height: auto;
+    }
+    .expert-label p {
+        font-size: 9pt !important;
+    }
+    .expert-info {
+        width: 42%;
+        height: 200pt;
+        margin-bottom: 12pt;
+        border-radius: 10pt;
+    }
+    .expert-info img {
+        height: 140pt;
+    }
+    .expert-introduce {
+        height: 40pt;
+    }
+    .expert-title {
+        height: 20pt;
+    }
+    .expert-introduce::before {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 33px;
+        margin-right: 124px;
+    }
+    .expert-introduce p, .expert-title p {
+        font-size: 8pt !important;
+    }
+    .expert-title p {
+        width: 100%;
+    }
+    .expert-list {
+        margin-bottom: 60pt !important;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    header::after {
+        height: 649px;
+    }
+    .intro-bg {
+        margin-left: -235px;
+        height: 950px;
+    }
+    .header-content h1 {
+        font-size: 22pt !important;
+    }
+    .coaching-line {
+        margin-bottom: 6pt;
+    }
+    .header-content p {
+        font-size: 8.5pt;
+        padding-top: 2pt;
+    }
+    .header-content svg {
+        width: 16pt;
+        height: 16pt;
+    }
+    .mentoring-title {
+        font-size: 22pt !important;
+    }
+    .mentoring-content p {
+        font-size: 9pt;
+    }
+    .mentoring-condition-h2 {
+        width: 80% !important;
+    }
+    .mentoring-condition-h2, .mentoring-condition-h2 strong {
+        font-size: 16pt !important;
+    }
+    .condition-icon img {
+        height: 65pt;
+        width: auto;
+        margin-bottom: 20pt;
+    }
+    .condition-title {
+        font-size: 18pt;
+    }
+    .condition-content p {
+        font-size: 10pt;
+    }
+    .process h2, .process strong {
+        font-size: 18pt !important;
+        width: 80% !important;
+    }
+    .content-box ul li {
+        font-size: 7.5pt;
+    }
+    .case-study-content {
+        height: 260pt;
+        margin-top: -20px;
+    }
+    .case-study-step img {
+        width: 75pt;
+        height: auto;
+    }
+    .expert-introduce::before {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 38px;
+        margin-right: 124px;
+    }
+    .expert-info img {
+        height: 126pt;
+    }
+    .expert-introduce {
+        height: 35pt;
+    }
+    .expert-title {
+        height: 18pt;
+    }
+    .expert-info {
+        height: 179pt;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header::after {
+        height: 648px;
+    }
+    .m4-step {
+        width: 90pt;
+    }
+    .m4-content {
+        height: 150pt;
+    }
+    .process p {
+        font-size: 8pt !important;
+    }
+    .m4-text, .m4-text span {
+        font-size: 8pt !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .intro-bg {
+        margin-left: -250px;
+    }
+    header::after {
+        height: 646px;
+    }
+    .mentoring-condition-h2 {
+        width: 85% !important;
+    }
+    .content-box ul li {
+        font-size: 7.5pt;
+    }
+    .expert-introduce::before {
+        margin-right: 115px;
+    }
+
 }

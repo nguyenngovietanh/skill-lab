@@ -1,3 +1,4 @@
+/* Website < 1520px */
 .header {
     width: 100%;
     padding: 0;
@@ -8,32 +9,33 @@
     background: #ffffff;
     height: 80px;
     z-index: 1000;
+    transition: all 0.15s linear;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
 }
-
 .logo {
     margin-left: 21px;
-    margin-top: 4px;
+    height: 100%;
 }
-
-.logo-img {
-    height: 70px;
+.logo a {
+    display: flex;
+    height: 100%;
 }
-
+.logo img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .navbar {
     margin-right: 34px;
     height: 100%;
 }
-
 .input-group>.form-control:focus, .input-group>.form-select:focus {
     box-shadow: none;
 }
-
 .input-group {
     border: 1px solid #979797; 
     width: 300px !important;
 }
-
-.navbar ul li {
+.navbar ul li, label {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -43,31 +45,25 @@
     border-bottom: 3px solid #ffffff;
     transition: .2s;
 }
-
-.navbar ul li:hover {
+.navbar ul li:hover, label:hover {
     border-bottom: 3px solid #007EDA;
 }
-
 .navbar ul li:last-child:hover {
     border-bottom: 3px solid #ffffff;
 }
-
-.navbar ul li:hover a {
+.navbar ul li:hover a, label:hover a {
     color: #007EDA;
     font-weight: bold;
 }
-
 ul {
     height: 100%;
 }
-
-ul li a {
+ul li a, label a {
     text-decoration: none;
     color: #000000;
     text-align: center;
     transition: .2s;
 }
-
 ul li button {
     width: 115px;
     height: 38px;
@@ -78,52 +74,61 @@ ul li button {
     color: #ffffff;
     transition: .2s;
 }
-
 ul li button:hover {
     transform: scale(1.1);
-    background: #f0f0f0;
+    background: #00ADEC1C;
     border: 1px solid #007EDA;
     color: #007EDA;
 }
-
-#li-2, #li-3, #li-4, #li-5 {
+#li2, #li3, #li4, #li5 {
     margin-left: 15px;
     display: flex;
     justify-content: center;
 }
-
-
-
-#li-3:hover .dropdown-menu {
+#li3:hover .dropdown-menu {
     display: block;
     margin-top: 203px;
     height: 120px;
-    width: 80px;
+    width: 85px;
     border: none;
     border-radius: 0px;
     min-width: 77px;
     padding: 0rem 0;
 }
-
-#li-3 ul li {
+#li3 ul li {
     height: 40px;
     padding: 0;
     margin: 0;
     border-bottom: 3px solid #ffffff;
+    background-color: #ffffff;
 }
-
-#li-3 ul li a {
+#li3 ul li a {
     color: #000000;
     font-weight: normal;
 }
-
-#li-3 ul li:hover {
+#li3 ul li:hover {
     border-bottom: 3px solid #007EDA;
+    background-color: #00ADEC1C;
 }
-
-#li-3 ul li:hover a {
+#li3 ul li:hover a {
     color: #007EDA;
     font-weight: bold;
+}
+#dropdownBox {
+    display: none;
+}
+
+@media only screen and (min-width: 2560px) {
+    .input-group {
+        margin-right: 1000px !important;
+        width: 400px !important;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .input-group {
+        margin-right: 500px;
+    }
 }
 
 @media only screen and (max-width: 1520px) {
@@ -132,130 +137,349 @@ ul li button:hover {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
+    .input-group {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        height: 70px;
+    }
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .navbar ul li, label {
+        font-size: 12px !important;
+    }
+    ul li button {
+        width: 95px;
+        height: 32px;
+    }
+    #li1, #li2 {
+        width: 58px !important;
+    }
+    #li2 {
+        margin-left: 11px !important;
+    }
+    #li3 {
+        width: 63px !important;
+        margin-left: 9px !important;
+    }
+    #li4 {
+        width: 73px !important;
+        margin-left: 11px !important;
+    }
+    #li5 {
+        width: 70px !important;
+        margin-left: 9px !important;
+    }
+    #li3:hover .dropdown-menu {
+        margin-top: 169px;
+        width: 63px !important;
+        min-width: 63px;
+        height: 96px;
+    }
+    #li3 ul {
+        width: 60px;
+    }
+    #li3 ul li {
+        width: 63px;
+        height: 32px;
+        display: flex;
+        align-items: center
+    }
+}
+
+/* Tablet */
+@media(min-width: 768px) and (max-width: 820px) {
     .header {
         height: 43px;
+        width: 100%;
     }
-
-    li a, li button {
+    li a, li button, label a {
         font-size: 10px;
     }
-
     .logo {
         margin-left: 11px;
         margin-top: 2px;
     }
-
     .logo img {
         height: 37px;
         width: auto;
     }
-
     .input-group {
         width: 160px !important;
         margin-right: 30px !important;
     }
-
     input, .input-group button {
         height: 21px !important;
         width: 35px !important;
         font-size: 11px !important;
     }
-
     .form-control {
         padding-left: 0.4rem !important;
     }
-
-    #li-1, #li-2 {
-        width: 45px !important;
+    #li1, #li2 {
+        width: 48px !important;
     }
-
-    #li-2 {
+    #li2 {
         margin-left: 11px !important;
     }
-
-    #li-3 {
+    #li3 {
         width: 54px !important;
         margin-left: 9px !important;
     }
-
-    #li-4 {
-        width: 57px !important;
+    #li4 {
+        width: 60px !important;
         margin-left: 11px !important;
     }
-
-    #li-5 {
-        width: 55px !important;
+    #li5 {
+        width: 60px !important;
         margin-left: 9px !important;
     }
-
+    .navbar ul li, label {
+        border-bottom: 2px solid #ffffff;
+    }    
+    .navbar ul li:hover, label:hover {
+        border-bottom: 2px solid #007EDA;
+    }
+    #li3 ul li:hover {
+        border-bottom: 2px solid #007EDA;
+        font-weight: bold;
+    }   
+    #li3 ul li {
+        width: 54px;
+    }
     ul li:last-child {
         margin-left: 10px !important;
     }
-
     ul li button {
         width: 68px;
         height: 25px;
     }
-
     .input-group button {
         width: 26px !important;
         height: auto;
     }
-
     .input-group button .fa-search::before {
         font-size: 13px;
     }
-
     .navbar {
         margin-right: 18px;
     }
-
-    #li-3:hover .dropdown-menu {
-        margin-top: 124px;
-        width: 54px;
+    #li3:hover .dropdown-menu {
+        margin-top: 123px;
+        width: 54px !important;
         min-width: 54px !important;
         height: 78px;
     }
-
-    #li-3 ul li {
+    #li3 ul li {
         height: 26px;
     }
-
-    #li-3 ul li:last-child {
+    #li3 ul li:last-child {
         margin-left: 0 !important;
     }
 }
 
+/* Surface Duo */
 @media only screen and (max-width: 540px) {
     .header {
         height: 70px;
         width: 540px;
     }
-
     .logo {
         margin-top: 0;
+        z-index: 1;
     }
     .logo img {
         height: 50px;
+        width: auto;
     }
     #toggle {
         cursor: pointer;
         color: #1e0f3d;
         position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 2rem;
+        border: none;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #toggle img {
         width: 30px;
         height: 30px;
-        right: 2rem;
     }
-
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 70px;
+        background: rgba(0, 0, 0, 0.4);    
+        display: none;
+        animation: fadeIn linear 0.3s;
+    }
+    #navbar {
+        position: fixed !important;
+        transition: all 0.4s ease-in-out;
+        width: 70% !important;
+        background: #ffffff;
+        height: 1000pt;
+        top: 70px;
+        justify-content: flex-start;
+        transform:translateX(-100%);
+    }
+    #navInput:checked ~ .nav-overlay {
+        display: block !important;
+    }
+    #navInput:checked ~ #navbar {
+        transform: translateX(0%);
+    }
     .input-group {
         opacity: 0;
     }
-
-    .navbar {
-        position: absolute;
-        transition: all 0.4s ease-in-out;
-        top: -800px;
+    .navbar > ul {
+        position: absolute !important;
+        display: flex;
+        flex-direction: column !important;
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        justify-content: start !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        align-items: flex-start !important;
+    }
+    #li1, #li2, #li3, #li4, #li5, .header ul li:last-child {
+        padding-left: 20pt !important;
+        margin-left: 0 !important;
+        height: 70px !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: none !important;
+        transition: all 0.3s ease-in-out;
+    }
+    #li1, #li2, #li3, #li4, #li5 {
+        border-right: 3px solid #ffffff;
+    }   
+    #li1:hover, #li2:hover, #li3:hover, #li4:hover, #li5:hover {
+        border-right: 3px solid #007EE0;
+        background: #00ADEC1C;
+    }
+    ul li a, ul li button {
+        font-size: 16pt !important;
+        width: 117pt;
+        height: 38pt;
+    }
+    ul li a {
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    label a {
+        font-size: 16pt;
+        text-decoration: none;
+        color: #000000;
+    }
+    label:hover a {
+        color: #007EDA;
+        font-weight: bold;
+    }
+    #dropdownBox button a {
+        transition: .3s;
+    }
+    #dropdownBox button:hover a {
+        font-weight: bold;
+        background: none;
+    }   
+    #close:checked ~ #dropdownBox {
+        display: block;
+    }
+    ul {
+        padding-bottom: 300pt;
+    }
+    .dropdown-menu {
+        display: none !important;
+    }
+    #dropdownBox {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        animation: fadeIn linear 0.3s;
+    }
+    .dropdown-box button {
+        height: 70px;
+        border: none;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .dropdown-box button a {
+        font-size: 16pt;
+        justify-content: center;
+        align-items: center !important;
+        padding-left: 40pt;
+    }    
+    .dropdown-box button:hover {
+        border-right: 3px solid #007EDA;
+        background: #00ADEC1C;
+    }
+    .dropdown-box button:hover a {
+        color: #007EDA;
+    }
+    #lineInput:checked ~ .dropdown-box {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
     }
 }
+
+/* Iphone 12, Iphone XR, Iphone SE */
+@media (min-width: 360px) and (max-width: 414px) {
+    .header {
+        height: 70px;
+        max-width: 414px;
+        width: 100%;
+    }
+    #li1, #li2, #li3, #li4, #li5, ul li:last-child {
+        height: 40pt !important;
+    }
+    .dropdown-box button {
+        height: 40pt;
+        border-right: 3px solid #ffffff;
+        transition: all 0.3s ease-in-out;
+    }
+    ul li a, ul li button, label a {
+        font-size: 14pt !important;
+    }
+    .dropdown-box button a {
+        font-size: 14pt;
+    }
+    #toggle {
+        right: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .header {
+        width: 100%;
+    }
+}
+
     

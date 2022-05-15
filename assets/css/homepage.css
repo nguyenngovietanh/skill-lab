@@ -18,6 +18,15 @@ h2, h2 > b {
 .banner{
     overflow: hidden;
     padding-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.banner-text{
+    width: 510px;
+    position:absolute;
+    margin-left: 120px;
+    color:white;
+    text-align: left;
 }
 .banner-text p {
     font-size: 42px;
@@ -39,6 +48,9 @@ h2, h2 > b {
     padding-top:50px; 
     font-size:20px; 
     color:#165FA5;
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .number {
     font-size: 32px;
@@ -154,15 +166,40 @@ h2, h2 > b {
     background: #ffffff;
     height: 1px;
     width: 35px;
-    margin-left: 65px;
+    margin-left: 55px;
 }
-.banner-text{
-    width: 503px;
-    position:absolute;
-    top: 14%;
-    margin-left: 120px;
-    color:white;
-    text-align: left;
+
+/* .mlispec-content {
+    max-width: 1200px;
+    width: 100%;
+} */
+.application-content {
+	margin-top: 80px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+.mlispec-title strong {
+    font-weight: bold;
+}
+.mlispec-map img {
+	width: 450px;
+	height: auto;
+}
+.conigtive {
+    width: 100%;
+    padding: 0 !important;
+}
+.conigtive-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill-box img {
+    width: 100%;
 }
 .skill-box {
     width: 380px;
@@ -183,6 +220,7 @@ h2, h2 > b {
     height: 60px;
 }
 .cooperative-schools {
+    width: 100%;
     background-color: #E6F1F1; 
     padding-top:67px; 
     padding-left:200px; 
@@ -190,8 +228,146 @@ h2, h2 > b {
     padding-bottom:100px;
 }
 
+/* 1920px */
+@media only screen and (min-width: 1920px) {
+    .banner-text {
+        width: 580px;
+    }
+    .banner-text p {
+        font-size: 45px;
+    }
+    .banner-text p:first-child {
+        line-height: 55px;
+    }
+    .banner-content span {
+        font-size: 18px;
+    }
+    .number {
+        font-size: 35px;
+        width: 70px;
+        height: 70px;
+    }
+    .application-content {
+        justify-content: space-around !important;
+    }
+}
+
+/* Nest Hub Max */
+@media only screen and (max-width: 1280px) {
+    .online-bachelor {
+        padding: 0 !important;
+        width: 100% !important;
+        --bs-gutter-x: 0 !important;
+    }
+    .col-md-6:last-child {
+        width: 45% !important;
+    }
+    .expert-list {
+        max-width: 1280px !important;
+        width: 100% !important;
+    }
+    .expert-info {
+        width: 20%;
+    }
+    .expert-info img {
+        height: 290px;
+    }
+    .expert-introduce::before {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 60px;
+        margin-right: 195px;
+    }
+    .expert-introduce {
+        height: 75px;
+    }
+    .expert-title {
+        height: 35px;
+    }
+}
+
+/* Nest Hub*/
+@media only screen and (max-width: 1024px) {
+    .banner {
+        padding-top: 70px;
+    }
+    .banner-text {
+        margin-left: 100px;
+    }
+    .banner-text p {
+        font-size: 35px;
+    }
+    .banner-text p:first-child {
+        line-height: 40px !important;
+    }
+    .banner-text button {
+        width: 180px;
+        height: 50px;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+    .expert-info {
+        height: 345px;
+    }
+    .expert-info img {
+        height: 250px;
+    }
+    .expert-introduce {
+        height: 65px;
+    }
+    .expert-introduce p, .expert-title p {
+        width: 100% !important;
+        font-size: 13px !important;
+    }
+    .expert-introduce::before {
+        margin-bottom: 50px;
+        margin-right: 140px;
+    }
+    .expert-title {
+        height: 30px;
+    }
+    .application-content {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .mlispec-content {
+        width: 100% !important;
+    }
+    .conigtive-highlight {
+        width: 100% !important;
+    }
+    .gallery {
+        width: 100% !important;
+    }
+    .skill-box {
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .skill-box-title {
+        font-weight: bold;
+    }
+    .skill-box img {
+        height: 215px !important;
+    } 
+    .cmt3 p, .cmt3 span {
+        font-size: 17px;
+    }
+    .cmt3 p span {
+        width: 35px;
+        margin-left: 65px;
+    }
+    .cmt3 p {
+        margin-bottom: 6px !important;
+    }
+    .cmt3-content {
+        line-height: 10px;
+    }
+}
+
 /* Tablet */
-@media only screen and (max-width: 768px) {
+@media(min-width: 768px) and (max-width: 820px) {
     * {
         font-size: 11px;
     }
@@ -200,7 +376,6 @@ h2, h2 > b {
         padding-top: 43px;
     }
     .banner-text {
-        top: 10%;
         margin-left: 60px;
     }
     .banner-text p, .banner-text strong {
@@ -226,7 +401,16 @@ h2, h2 > b {
     h2, h2 > b {
         font-size: 17px;
     }
+    
     /* expert */
+    .title-1 {
+        width: 100%;
+        margin: 0 !important;
+    }
+    .title-1 p {
+        padding-right: 0 !important;
+        width: 100%;
+    }
     .expert-list {
         width: 686px !important;
     }
@@ -272,8 +456,8 @@ h2, h2 > b {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
     }
-    .expert-title p {
-        font-size: 10px !important;
+    .expert-introduce p, .expert-title p {
+        font-size: 9px !important;
     }
     /* bachelor */
     .online-bachelor {
@@ -311,31 +495,38 @@ h2, h2 > b {
         font-size: 11px; 
     }
     /* application */
-    .application {
-        margin-top: 70px !important;
-    }
-    .application .col-md-7 {
-        padding-left: 30px;
-    }
-    .application .col-md-5 {
-        padding-right: 30px;
-    }
-    .application img {
-        width: 90% !important;
-    }
-    .application .mb-5 .row {
-        padding-left: 0 !important; 
-        padding-right: 0 !important;
-    }
-    .application strong {
-        font-size: 21px !important;
-    }
-    .application p {
-        padding-right: 0;
-    }
+	.application {
+		margin-top: 90px !important;
+		margin-bottom: 53px !important;
+	}
+
+	.application-content {
+		margin-top: 44px;
+		margin-left: 64px;
+		margin-right: 64px;
+	}
+
+	.mlispec-title strong {
+		font-size: 23px !important;
+	}
+
+	.mlispec-content {
+		width: 380px !important;
+	}
+
+	.mlispec-content p,
+	.mlispec-content span {
+		font-size: 10px !important;
+	}
+
+	.mlispec-map img {
+		width: 240px;
+	}
+
     /* conigtive */
     .conigtive {
         padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .conigtive .col-md-6 img {
         width: 70%;
@@ -350,9 +541,18 @@ h2, h2 > b {
         padding-left: 5px;
         padding-right: 5px;
     }
+    .conigtive-highlight {
+        width: 100% !important;
+    }
     /* gallery */
     .gallery {
         margin-top: 3rem;
+    }
+    .action-gallery > .col-12 {
+        padding-right: 0 !important;
+    }
+    .cmt3::before {
+        top: -13px;
     }
     .cmt3 p span {
         margin-left: 40px;
@@ -374,6 +574,13 @@ h2, h2 > b {
     .skill-box-title {
         font-size: 11px !important;
     }
+    .cmt3 p, .cmt3 span {
+        font-size: 9px !important;
+    }
+    .cmt3 p span {
+        width: 28px;
+        margin-left: 35px;
+    }
     .sign-up button {
         width: 150px;
         height: 32px;
@@ -383,6 +590,11 @@ h2, h2 > b {
         padding-left:107px; 
         padding-right:107px; 
         padding-bottom:53px;
+    }
+    .col-12 {
+        max-width: 820px !important;
+        width: 100% !important;
+        padding: 0 !important;
     }
 }
 
@@ -411,7 +623,7 @@ h2, h2 > b {
         margin-left: -1106px;
     }
     .banner-text {
-        margin-top: 430px;
+        margin-top: 410px;
         margin-left: 20px;
         top: 70px;
         z-index: 10;
@@ -428,6 +640,7 @@ h2, h2 > b {
     }
     .banner-content {
         margin-top: 10px;
+        margin-bottom: 20pt;
     }
     .banner-content span {
         font-size: 14pt !important;
@@ -480,8 +693,8 @@ h2, h2 > b {
         font-size: 24pt !important;
     }
     .title-2 {
-        width: 305pt !important;
-        height: 57pt;
+        width: 95% !important;
+        height: 100pt;
         margin-left: auto !important;
         margin-right: auto !important;
         padding-bottom: 35pt !important;
@@ -518,8 +731,8 @@ h2, h2 > b {
         height: 52pt;
     }
     .expert-introduce::before {
-        margin-bottom: 62px;
-        margin-right: 177px;
+        margin-bottom: 40px;
+        margin-right: 170px;
     }
     .expert-introduce p, .expert-title p {
         font-size: 10.5pt !important;
@@ -539,12 +752,15 @@ h2, h2 > b {
         padding-right: 0 !important;
     }
     .online-bachelor-title {
-        width: 375pt !important;
-        max-width: 375pt;
+        width: 376pt !important;
+        max-width: 376pt;
         margin-bottom: 30pt;
     }
     .online-bachelor-title span, .online-bachelor-title strong {
         font-size: 24pt !important;
+    }
+    .col-md-6:last-child {
+        width: 100% !important;
     }
     .col-2 .number {
         font-size: 29pt;
@@ -555,7 +771,6 @@ h2, h2 > b {
     .option-1 b, .option-2 b, .option-3 b {
         font-size: 16pt;
     }
-
     .option-1 p, .option-2 p, .option-3 p {
         font-size: 14pt !important;
         line-height: 22px !important;
@@ -564,63 +779,77 @@ h2, h2 > b {
     .option-1, .option-2, .option-3 {
         margin-left: 5pt;
     }
-    /* PHƯƠNG PHÁP SƯ PHẠM ỨNG DỤNG THỰC TIỄN */
-    .application {
-        margin-top: 73pt !important;
-        margin-bottom: 0 !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    
+    /* application */
+	.application {
+		margin-bottom: 50pt !important;
+	}
+	.application h2 {
+		font-size: 28pt !important;
+		width: 320pt;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+    .application-content {
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-wrap: wrap;
     }
-    .application h2 {
-        font-size: 24pt;
-        width: 290pt;
-    }
-    .application strong {
-        font-size: 40pt !important;
-    }
-    .application .mb-3 {
-        font-size: 20pt !important;
-        width: 370pt;
-        line-height: 20pt;
-        padding-bottom: 15pt;
-    }
+
+	.mlispec-title strong {
+		font-size: 32pt !important;
+	}
+
+	.mlispec-content p, .mlispec-content b, .mlispec-content span {
+		font-size: 16pt !important;
+	}
+
     .mlispec-content {
-        padding: 0 !important;
-        flex-direction: column;
+        width: 100% !important;
     }
-    .application p {
-        margin-bottom: 10pt !important;
-    }
-    .application p, .application b, .application strong, .application span {
-        font-size: 14pt;
-    }
-    .application p:last-child {
-        margin-bottom: 40pt !important;
-    }
-    .application .col-md-5 {
-        padding: 0 !important;
-        width: 80%;
-    }
-    .application .col-md-7 {
-        padding-left: 15px;
-        width: 510px !important;
-    }
+
+	.mlispec-content span {
+		margin-top: 10pt;
+		margin-bottom: 20pt;
+	}
+
+	.mlispec-map img {
+		width: 100%;
+		margin-top: 30pt;
+	}
     /* 5 CONIGTIVE LEVELS */
     .conigtive {
         width: 100%;
         padding: 0 !important;
         padding-bottom: 60pt !important;
     }
+    .conigtive-content {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .conigtive-content img {
+        padding-top: 0;
+    }
     .conigtive .col-md-6:last-child {
         width: 360pt !important;
         padding-left: 20pt !important;
+    }
+    .conigtive .col-1 {
+        display: flex !important;
+        align-items: center !important;
+        padding-left: 7px !important;
+        padding-right: 7px !important;
     }
     .conigtive strong {
         font-size: 32pt !important;
     }
     .conigtive-highlight {
         font-size: 16pt !important;
+        margin-top: 20pt !important;
+        margin-bottom: 20pt;
+        width: 100% !important;
     }
     .conigtive p {
         font-size: 14pt;
@@ -661,7 +890,7 @@ h2, h2 > b {
         height: 150pt;
     }
     .cmt3::before {
-        top: -11pt;
+        top: -16pt;
         left: 30pt;
     }
     .skill-box-title {
@@ -673,6 +902,7 @@ h2, h2 > b {
         display: inline-block;
         font-size: 16pt !important;
         width: 300pt;
+        line-height: 25px;
     }
     .cmt3 p:last-child, .cmt3 span:last-child {
         display: none !important;
@@ -696,7 +926,7 @@ h2, h2 > b {
         padding: 0;
     }
     .gallery-image .col-3 {
-        width: 270px;
+        width: 50%;
     }
     /* cooperative-schools */
     .cooperative-schools {
@@ -726,20 +956,417 @@ h2, h2 > b {
     .logo-1, .logo-2, .logo-3 {
         width: 33.33% !important;
     }
+    .logo-1 {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo-2 {
+        padding: 0 !important;
+    }
+    .logo-3 {
+        display: flex;
+        justify-content: flex-start;
+    }
     .logo-4, .logo-5 {
         width: 50% !important;
-        margin-top: 26pt !important;
+        margin-top: 20pt !important;
     }
     .logo-4 {
         display: flex;
         justify-content: end;
-        padding-right: 13pt !important;
+        padding-right: 10pt !important;
     }
     .logo-5 {
         display: flex;
         justify-content: start;
-        padding-left: 13pt !important;
+        padding-left: 10pt !important;
     }
 }
+
+/* Iphone 12, Iphone XR, Iphone SE, Samsung Galaxy S8+ */
+@media (min-width: 360px) and (max-width: 414px) {
+    .banner {
+        width: 100% !important;
+    }
+    .banner img {
+        width: 1428px;
+        margin-left: -815px;
+    }
+    .banner::after {
+        height: 565px;
+    }
+    .banner-text {
+        margin-top: 278px;
+        width: 330px;
+    }
+    .banner-text p:first-child {
+        line-height: 25px !important;
+    }
+    .banner-text p, .banner-text strong {
+        font-size: 16pt !important;
+    }
+    .banner-content {
+        margin-bottom: 0 !important;
+    }
+    .banner-content span {
+        font-size: 10pt !important;
+        width: 100%;
+    }
+    .banner-text p {
+        line-height: 20pt !important;
+    }
+    .banner-text .row:last-child {
+        margin-top: 0 !important;
+    }
+    .banner-text button {
+        width: 130px;
+        height: 42px;
+        font-size: 10pt;
+        border-radius: 5pt;
+    }
+    .main-content {
+        margin-top: 50pt !important;
+    }
+    .title-1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .title-1 p, .title-1 strong {
+        font-size: 12pt !important;
+    }
+    .title-1 p {
+        width: 100%;
+    }
+    .icon-nav {
+        padding-top: 0;
+    }
+    .icon-nav img {
+        width: 50pt !important;
+        height: 50pt;
+    }
+    .icon-nav p {
+        font-size: 12pt;
+        margin-top: 14pt !important;
+        margin-bottom: 30pt !important;
+    }
+    .col-12 {
+        width: 100% !important;
+    }
+    .col-12 .p-5 {
+        width: 230pt !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .title-2 {
+        width: 100% !important;
+        height: 55pt;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 !important;
+    }
+    .title-2, .title-2 b {
+        font-size: 15pt !important;
+    }
+    .expert-list {
+        max-width: 400px;
+        width: 100% !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .expert-info {
+        width: 50%;
+        height: 297px;
+    }
+    .expert-info img {
+        height: 205px;
+        border-top-right-radius: 5pt;
+        border-top-left-radius: 5pt;
+    }
+    .expert-info-3, .expert-info-4 {
+        padding-top: 0 !important;
+    }
+    .expert-introduce {
+        height: 52px;
+    }
+    .expert-title {
+        height: 26px;
+        border-bottom-left-radius: 5pt;
+        border-bottom-right-radius: 5pt;
+    }
+    .expert-introduce p, .expert-title p {
+        font-size: 10.5px !important;
+        width: 100% !important;
+    }
+    .expert-introduce::before {
+        width: 20px;
+        height: 20px;
+    }
+    .expert-introduce::before {
+        margin-bottom: 50px;
+        margin-right: 135px;
+    }
+    .online-bachelor {
+        margin-top: 50pt !important;
+    }
+    .online-bachelor-title {
+        width: 375px !important;
+        max-width: 375px;
+        margin-bottom: 15pt;
+    }
+    .online-bachelor-title span, .online-bachelor-title strong {
+        font-size: 17pt !important;
+    }
+    .col-md-6:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col-2 .number {
+        font-size: 20pt;
+        width: 38pt;
+        height: 38pt;
+        border-radius: 9pt;
+    }
+    .option-1, .option-2, .option-3 {
+        margin-top: -4px !important;
+    }
+    .option-1 b, .option-2 b, .option-3 b {
+        font-size: 12pt;
+    }
+    .option-1 p, .option-2 p, .option-3 p {
+        font-size: 10pt !important;
+        line-height: 15px !important;
+        margin-bottom: 15pt !important;
+    }
+    .application {
+        margin-top: 50px !important;
+    }
+    .application h2 {
+        font-size: 15pt !important;
+        width: 190pt;
+    }
+    .application-content {
+        margin-top: 24px;
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+    .mlispec-title strong {
+        font-size: 28px !important;
+    }
+    .mlispec-content p, .mlispec-content b, .mlispec-content span {
+        font-size: 12pt !important;
+    }
+    .conigtive-content {
+        padding-top: 50pt;
+        align-items: center;
+    }
+    .conigtive-content img {
+        margin-bottom: 20pt;
+    }
+    .conigtive strong {
+        font-size: 28px !important;
+        font-weight: bold;
+    }
+    .conigtive .col-md-6:last-child {
+        width: 365px !important;
+        padding-left: 10pt !important;
+    }
+    .conigtive-highlight {
+        font-size: 11pt !important;
+        margin-top: 10pt !important;
+        margin-bottom: 10pt;
+        width: 100% !important;
+    }
+    .conigtive p {
+        font-size: 10pt;
+        padding-left: 7pt;
+    }
+    .conigtive-content img {
+        margin-bottom: 0pt;
+    }
+    .option-1 p, .option-2 p, .option-3 p {
+        width: 100%;
+    }
+    .skills {
+        padding-top: 43pt;
+        width: 100% !important;
+    }
+    .skills h2 {
+        font-size: 15pt;
+        width: 175pt;
+        margin-bottom: 6pt !important;
+    }
+    .skills p {
+        font-size: 10pt;
+        width: 210pt;
+        margin-bottom: 14pt;
+    }
+    .skill-box {
+        width: 270pt !important;
+        margin-bottom: 15pt;
+    }
+    .skill-box img {
+        height: 180pt !important;
+        width: 100% !important;
+    }
+    .cmt3 {
+        height: 110pt;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .skill-box-title {
+        font-size: 13pt !important;
+        margin-bottom: 8pt !important;
+    }
+    .cmt3 .cmt3-content {
+        font-size: 12pt !important;
+        width: 100%;
+        padding-right: 5pt;
+        line-height: 20px !important;
+    }
+    .cmt3::before {
+        top: -14pt;
+        left: 15pt;
+    }
+    .skills .mt-5 {
+        margin-top: 20px !important;
+    }
+    .sign-up button {
+        width: 155px;
+        height: 40px;
+        font-size: 10pt;
+        border-radius: 8px;
+    }
+    .gallery-image .col-3 {
+        width: 50%;
+    }
+    .cooperative-schools {
+        padding-top: 30pt;
+    }
+    .cooperative-schools h2 {
+        font-size: 15pt !important;
+        width: 100%;
+    }
+    .logo-school img {
+        width: 80pt !important;
+    }
+    .logo-1 {
+        padding-right: 0 !important;
+        text-align: right;
+    }
+    .logo-3 {
+        padding-left: 0 !important;
+        text-align: left;
+    }
+    .logo-4, .logo-5 {
+        margin-top: 13pt !important;
+    }
+    .logo-4 {
+        padding-right: 6pt !important;
+    }
+    .logo-5 {
+        padding-left: 6pt !important;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    .banner img {
+        width: 1400px;
+        margin-left: -827px;
+    }
+    .banner::after {
+        height: 554px;
+    }
+    .conigtive-content .row {
+        width: 90%;
+    }
+    .online-bachelor-title {
+        width: 100% !important;
+        max-width: 350px;
+        margin-bottom: 13pt;
+    }
+    .online-bachelor-title span, .online-bachelor-title strong {
+        font-size: 15pt !important;
+    }
+    .expert-introduce::before {
+        margin-bottom: 45px;
+        margin-right: 120px;
+    }
+    .conigtive strong {
+        font-size: 24px !important;
+    }
+    .expert-list {
+        max-width: 360px;
+    }
+    .expert-info img {
+        height: 190px;
+    }
+    .expert-info {
+        height: 278px;
+    }
+    .expert-introduce {
+        height: 50px;
+    }
+    .expert-title {
+        height: 24px;
+    }
+    .expert-info-3, .expert-info-4 {
+        padding-top: 0pt;
+    }
+    .skill-box {
+        width: 90% !important;
+    }
+    .skill-box img {
+        height: 175pt !important;
+    }
+    .skill-box .cmt3 {
+        height: 105pt;
+    }
+    .skill-box-title {
+        font-size: 12pt !important;
+        margin-bottom: 7pt !important;
+    }
+    .cmt3 .cmt3-content {
+        font-size: 10pt !important;
+    }
+    .logo-1 {
+        padding-left: 0 !important;
+    }
+    .cooperative-schools .logo-2 {
+        padding-left: 6pt !important;
+        padding-right: 6pt !important;
+    }
+    .action-gallery .mt-5 {
+        margin-top: 0 !important;
+    }
+    .logo-3 {
+        padding-right: 0 !important;
+    }
+    .logo-4 {
+        padding-right: 5pt !important;
+    }
+    .logo-5 {
+        padding-left: 5pt !important;
+    }
+    .logo-4, .logo-5 {
+        margin-top: 8pt !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .conigtive .col-md-6:last-child {
+        width: 100% !important;
+    }
+    .conigtive-content .row {
+        width: 98%;
+    }
+    .logo-school img {
+        width: 70pt !important;
+    }
+}
+
+
 
 

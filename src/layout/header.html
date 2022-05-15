@@ -7,22 +7,28 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://kit.fontawesome.com/8303a6dc74.js"></script>
 
-<div class="header position-fixed">
+<div class="header position-fixed" id="header">
     <div class="logo">
-        <img src="/assets/img/logo-1.png" alt="">
+        <a href="../pages/homepage.html">
+            <img src="/assets/img/logo-1.png" alt="" type="button">
+        </a>
     </div>
-    <div id="toggle"><img src="/assets/svg/header-svg/ic_homeSP.svg" alt=""></div>
+    <input type="checkbox" hidden name="" id="navInput">
+    <label id="toggle" class="toggle-btn" for="navInput"><img src="/assets/svg/header-svg/ic_homeSP.svg" alt=""></label>
+    <label class="nav-overlay" for="navInput"></label>
     <div class="input-group rounded d-flex align-items-center">
-        <input type="search" class="form-control rounded border-0" aria-label="Search" aria-describedby="search-addon" />
+        <input type="search" class="form-control rounded border-0" aria-label="Search"
+            aria-describedby="search-addon" />
         <button class="input-group-text border-0 bg-white" id="search-addon" style="height: 38px;">
             <i class="fas fa-search d-flex" style="color: #979797;"></i>
         </button>
     </div>
-    <div class="navbar d-flex align-items-center p-0 my-0">
+    <div id="navbar" class="navbar d-flex align-items-center p-0 my-0">
         <ul class="d-flex align-items-center list-unstyled m-0">
-            <li id="li-1" style="width: 75px;"><a href="../pages/homepage.html">Trang chủ</a></li>
-            <li id="li-2" style="width: 75px;"><a href="../pages/intro.html">Giới Thiệu</a></li>
-            <li id="li-3" style="width: 80px;">
+            <li id="li1" style="width: 80px;"><a href="../pages/homepage.html">Trang chủ</a></li>
+            <li id="li2" style="width: 80px;"><a href="../pages/intro.html">Giới Thiệu</a></li>
+            <input type="checkbox" hidden name="" id="close">
+            <label id="li3" for="close" type="button" style="width: 85px;">
                 <a href="#" class="d-flex align-items-center p-0">
                     Skill LAB
                     <div class="ms-1">
@@ -39,9 +45,16 @@
                     <li><a href="../pages/coaching-project.html" class="dropdown-item text-center h-100">Lab 2</a></li>
                     <li><a href="../pages/mentoring.html" class="dropdown-item text-center h-100">Lab 3</a></li>
                 </ul>
-            </li>
-            <li id="li-4" style="width: 98px;"><a href="../pages/news.html">Tin sinh viên</a></li>
-            <li id="li-5" style="width: 93px;"><a href="#">My Skill LAB</a></li>
+            </label>
+            <div class="dropdown-box" id="dropdownBox">
+                <button><a href="../pages/learn-skills.html" class="dropdown-item text-start">LEARNING
+                        SKILL</a></button>
+                <button><a href="../pages/coaching-project.html" class="dropdown-item text-start">COACHING
+                        PROJECT</a></button>
+                <button><a href="../pages/mentoring.html" class="dropdown-item text-start">MENTORING 1-1</a></button>
+            </div>
+            <li id="li4" style="width: 100px;"><a href="../pages/news.html">Tin sinh viên</a></li>
+            <li id="li5" style="width: 100px;"><a href="#">My Skill LAB</a></li>
             <li style="margin-left: 18px">
                 <button>Đăng nhập</button>
             </li>
